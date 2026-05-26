@@ -20,7 +20,7 @@ class LoginPage {
 
     async login(username, password) {
 
-        await this.u_input.fill(username)\
+        await this.u_input.fill(username)
         await this.u_password.fill(password)
         await this.loginbtn.click()
     }
