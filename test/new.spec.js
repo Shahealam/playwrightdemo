@@ -2,7 +2,7 @@ const { chromium } = require('playwright');
 
 (async () => {
   // Launch browser (headed mode so you can see it)
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
     viewport: { width: 1280, height: 720 },
     // Clearing location permissions to avoid browser popups
