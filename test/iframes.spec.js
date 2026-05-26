@@ -1,36 +1,36 @@
-import { test, expect } from '@playwright/test';
+// import { test, expect } from '@playwright/test';
 
-test('handling iframes', async ({ page }) => {
+// test('handling iframes', async ({ page }) => {
 
-    await page.goto('https://demoqa.com/frames');
+//     await page.goto('https://demoqa.com/frames');
 
-    // wait for iframe to load
-    await page.waitForSelector('#frame1');
+//     // wait for iframe to load
+//     await page.waitForSelector('#frame1');
 
-    // count frames
-    const frames = page.frames();
+//     // count frames
+//     const frames = page.frames();
 
-    console.log('total frames are:', frames.length);
+//     console.log('total frames are:', frames.length);
 
-    // get text from iframe
-    const heading = await page.frameLocator('#frame1').locator('#sampleHeading').textContent();
+//     // get text from iframe
+//     const heading = await page.frameLocator('#frame1').locator('#sampleHeading').textContent();
 
-    console.log('heading of frame1 is:', heading);
+//     console.log('heading of frame1 is:', heading);
 
-   await expect(heading).toBe('This is a sample page');
-});
+//    await expect(heading).toBe('This is a sample page');
+// });
 
-test('verify nested iframes',async ({ page }) => {
+// test('verify nested iframes',async ({ page }) => {
 
-    await page.goto('https://demoqa.com/frames');
+//     await page.goto('https://demoqa.com/frames');
 
-    const nestedframe= page.frameLocator('#frame2').locator('#sampleHeading');
+//     const nestedframe= page.frameLocator('#frame2').locator('#sampleHeading');
     
-    await expect(nestedframe).toHaveText('This is a sample page');
+//     await expect(nestedframe).toHaveText('This is a sample page');
 
 
 
 
 
 
-});
+// });

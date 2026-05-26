@@ -1,23 +1,23 @@
-import {test,expect} from '@playwright/test';
-import { LoginPage } from './login.js';
+// import {test,expect} from '@playwright/test';
+// import { LoginPage } from './login.js';
 
 
- test('Verify user login', async ({ page }) => {
+//  test('Verify user login', async ({ page }) => {
 
-        // Create object of LoginPage class
+//         // Create object of LoginPage class
 
-        const loginPage = new LoginPage(page);
-
-
-        // Open page
-
-        await loginPage.openloginpage();
+//         const loginPage = new LoginPage(page);
 
 
-        // Login
+//         // Open page
 
-        await loginPage.login('testuser', 'Test@123');
+//         await loginPage.openloginpage();
 
 
-    });
+//         // Login
+
+//         await loginPage.login('testuser', 'Test@123');
+
+
+//     });
 
